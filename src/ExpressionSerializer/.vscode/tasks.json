@@ -1,0 +1,21 @@
+{
+    "version": "0.1.0",
+    "command": "dotnet",
+    "isShellCommand": true,
+    "args": [],
+    "tasks": [
+        {
+            "taskName": "build",
+            "args": [],
+            "isBuildCommand": true,
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "taskName": "unittest",
+            "suppressTaskName": true,
+            "args" : ["test"],
+            "isTestCommand": true,
+            "showOutput": "always"
+        }
+    ]
+}
