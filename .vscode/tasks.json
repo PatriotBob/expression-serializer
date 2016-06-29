@@ -6,14 +6,13 @@
     "tasks": [
         {
             "taskName": "build",
-            "args": [],
+            "args": ["${workspaceRoot}/test/ExpressionSerializer.Tests/"],
             "isBuildCommand": true,
             "problemMatcher": "$msCompile"
         },
         {
-            "taskName": "unittest",
-            "suppressTaskName": true,
-            "args" : ["test"],
+            "taskName": "test",
+            "args" : ["${workspaceRoot}/test/ExpressionSerializer.Tests/"],
             "isTestCommand": true,
             "showOutput": "always"
         }

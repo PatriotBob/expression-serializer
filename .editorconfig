@@ -1,0 +1,7 @@
+root = true
+
+[*.{js,json,yml}]
+indent_size = 2
+
+[*.cs]
+indent_size = 4
