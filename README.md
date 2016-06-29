@@ -1,4 +1,4 @@
-# Expression Serializer
+# Expression Serializer [![Build Status](https://travis-ci.org/PatriotBob/expression-serializer.svg?branch=master)](https://travis-ci.org/PatriotBob/expression-serializer)
 
 The main goal of this project is to allow lambda expressions to be serialized and deserialized from json.
 
