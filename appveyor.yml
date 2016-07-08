@@ -1,0 +1,8 @@
+version: 1.0.{build}
+configuration: Release
+before_build:
+- ps: Invoke-Expression "tasks/install.ps1"
+build_script:
+- ps: Invoke-Expression "tasks/build.ps1"
+test_script:
+- ps: Invoke-Expression "tasks/test.ps1"

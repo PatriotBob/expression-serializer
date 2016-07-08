@@ -6,9 +6,9 @@ before_install:
   - sudo apt-key adv --keyserver apt-mo.trafficmanager.net --recv-keys 417A0893
   - sudo apt-get -qq update
   - sudo apt-get install -y dotnet-dev-1.0.0-preview2-003121
-  - chmod +x .install.sh .build.sh
+  - chmod +x tasks/.install.sh tasks/.build.sh tasks/.test.sh
 install:
-  - ./.install.sh
+  - ./tasks/.install.sh
 script:
-  - ./.build.sh
-  - ./.test.sh
+  - ./tasks/.build.sh
+  - ./tasks/.test.sh
