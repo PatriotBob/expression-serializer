@@ -2,5 +2,5 @@
 
 core.exe /install /quiet /norestart
 
-ls src | %{"dotnet restore" $_.FullName}
-ls test | %{"dotnet restore" $_.FullName}
+ls src | % { &"dotnet restore" $_.FullName }
+ls test | % { &"dotnet restore" $_.FullName }
